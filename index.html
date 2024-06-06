@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem você seria no Palmeiras?</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(6, 219, 38);
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+            color: white;
+        }
+        fieldset{
+            border: 3px solid white;
+        }
+        legend{
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: white;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: rgb(6, 219, 38);
+        }
+        #submit{
+            background-color: white;
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: background-color: rgba(0, 0, 0, 0.8);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-color: rgb(6, 219, 38);
+        }
+        #div1 img{
+  width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>QUAL JOGADOR VOCÊ SERIA NO PALMEIRAS?</b></legend>
+                <br>
+                <div id="div1">
+                    <img src="https://conteudo.imguol.com.br/c/esporte/4b/2023/12/07/joao-paulo-sampaio-coordenador-geral-de-base-do-palmeiras-com-as-crias-da-academia-que-participaram-da-campanha-do-titulo-brasileiro-1701978690628_v2_750x421.jpg.webp" alt="Palmeiras">
+                    <br>
+                    <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                    <br>
+                    <br>
+                    <div class="inputBox">
+                    <input type="number" name="num_cartao" id="num_cartao" class="inputUser" required>
+                    <label for="num_cartao" class="labelInput">Número do Cartão de Crédito</label>
+                </div>
+                    <br>
+                    <br>
+                    <div class="inputBox">
+                    <input type="month" name="data_validade" id="data_validade" class="inputUser" required>
+                    <label for="data_validade">Data de Validade</label>
+                </div>
+                    <br>
+                    <br>
+                    <div class="inputBox">
+                    <input type="text" maxlength="3" name="cvv" id="cvv" class="inputUser" required>
+                    <label for="cvv" class="labelInput">CVV</label>
+                </div>
+                <br>    
+                <a href="formulario2.html"><input type="button" name="submit" id="submit" value="Verificar"></a>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
